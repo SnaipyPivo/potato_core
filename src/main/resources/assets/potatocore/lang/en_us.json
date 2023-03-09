@@ -1,4 +1,5 @@
 {
-  "item.potatocore.stone_apple": "Stone Apple"
-
+  "item.potatocore.stone_apple": "Stone Apple",
+  "item.potatocore.fnaf_secret_ending_record": "Music Disc",
+  "item.potatocore.fnaf_secret_ending_record.desc": "FNAF - Secret Ending"
 }

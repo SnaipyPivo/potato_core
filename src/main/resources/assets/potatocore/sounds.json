@@ -1,0 +1,10 @@
+{
+"fnaf_secret_ending": {
+  "sounds": [
+    {
+      "name": "potatocore:fnaf_secret_ending",
+      "stream": true
+    }
+  ]
+}
+}

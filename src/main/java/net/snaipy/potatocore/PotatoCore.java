@@ -16,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.snaipy.potatocore.item.ModItems;
+import net.snaipy.potatocore.sound.ModSounds;
 import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
@@ -31,6 +32,8 @@ public class PotatoCore
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
