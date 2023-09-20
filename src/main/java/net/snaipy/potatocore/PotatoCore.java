@@ -17,6 +17,7 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.snaipy.potatocore.item.ModItems;
 import net.snaipy.potatocore.sound.ModSounds;
+import net.snaipy.potatocore.world.structure.ModStructures;
 import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
@@ -24,7 +25,7 @@ import java.util.stream.Collectors;
 @Mod(PotatoCore.MOD_ID)
 public class PotatoCore
 {
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "potatocore";
 
     public PotatoCore()
@@ -34,6 +35,8 @@ public class PotatoCore
         ModItems.register(eventBus);
 
         ModSounds.register(eventBus);
+
+        ModStructures.register(eventBus);
 
         eventBus.addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
